@@ -1,0 +1,152 @@
+body {
+    background-color: #f3f3f3;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+.main-login {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80vw;
+    box-sizing: border-box;
+}
+
+.left-login {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 40vw;
+}
+
+.left-login > h1, h2 {
+    color: #548CA8;
+    margin: 5px;
+    width: 100%;
+}
+
+.left-login > img {
+    width: 75%;
+}
+
+.right-login {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 35vw;
+}
+
+.card-login {
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #00000035; /* eixo-x(right) eixo-Y(botton) blur */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 35px;
+    width: 435w;
+}
+
+.card-login > h1 {
+    color: #59b4e1;
+    margin: 10px 0;
+}
+
+.textfield {
+    padding: 10px;
+}
+
+.textfield > label {
+    color: #334257;
+}
+
+.textfield > label > input {
+    background: rgba(255, 255, 255, 0.5);
+    border: solid 2px #59b4e1;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px #00000035;
+    box-sizing: border-box;
+    color: #334257; 
+    display: block;
+    margin: 5px 0;
+    outline: none;
+    padding: 10px;
+    width: 25vw;
+}
+
+#input-date {
+    color:#33425794;
+}
+
+.textfield > label > input::placeholder {
+    color: #33425794;
+}
+
+.checkbox-container > h2, label {
+    color: #334257;
+    width: 24vw;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px #00000035;
+    color: #fdffffde; 
+    font-size: 15px;
+    font-weight: 700;
+    margin: 25px 0 0 5px; 
+    outline: none;
+    padding: 16px 0;
+    width: 45%;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-save {
+    background: #33bd8c;
+}
+
+.btn-clear {
+    background: #b42937;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login, .right-login {
+        width: 80vw;
+    }
+
+    .card-login {
+        width: 100%;
+    }
+
+    .textfield > label > input {
+        width: 50vw;
+    }
+}
